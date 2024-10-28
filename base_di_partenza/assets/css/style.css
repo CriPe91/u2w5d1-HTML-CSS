@@ -40,11 +40,29 @@ header {
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
 }
+@media screen and (min-width:1201px) {
+  header div,
+  header div p,
+  nav,
+  img,
+  nav ul,
+  nav li{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    
+  }
+}
 header div img {
   margin-bottom: 20px;
 }
 header nav ul {
   margin: 0;
+}
+@media screen and (min-width:1201px) {
+  header nav ul{
+    margin-left: 300px;
+  }
 }
 header nav li {
   list-style: none;
@@ -59,9 +77,11 @@ header nav li {
     margin-right: 15px;
   }
 }
+
 header nav li a {
   color: white;
   text-decoration: none;
+}
 }
 header nav li a:hover {
   color: red;
@@ -81,6 +101,13 @@ section {
   background-color: #e3e3e3;
   padding: 1em;
   margin-bottom: 2em;
+}
+@media screen and (min-width: 1201px){
+  section{
+    width: 45%;
+    display: inline-block;
+    border-radius: 20px;
+  }
 }
 section h2 {
   text-align: center;
@@ -150,6 +177,15 @@ iframe {
   height: auto;
   margin-bottom: 2em;
   border-radius: 20px;
+}
+@media screen and (min-width:1201px) {
+  iframe{
+    width: 52%;
+    display: inline-block;
+    vertical-align: top;
+    height: 38vh;
+
+  }
 }
 
 /* TABELLE */
